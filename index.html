@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather App</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="app.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+   
+<div>
+    
+    <div>
+        <p class=" Pera"> Weather App</p>
+        
+        
+        
+    
+    </div>
+        <div class="box">
+            <div class="form">
+                <form action=""  method="post">
+                    <lable class="city" for="city-name"> City name</label><br>
+                        <input class="blanck" id="city" type="text" placeholder="City Name" name="cityname">
+                        <button class="button" type="submit">go</button>
+                    </form>
+                </div> 
+            </div>
+            
+            <div class="icon">
+                <i class="fa-solid fa-cloud-bolt icon"></i>
+                <i class="fa-solid fa-bolt icon"></i>
+                <i class="fa-solid fa-umbrella icon"></i>
+                <i class="fa-solid fa-temperature-low icon"></i>
+                <i class="fa-solid fa-cloud-showers-heavy icon"></i>
+                
+            </div>
+            
+        </div>
+</body>
+<style> 
+
+
+
+.box{
+    text-align: center;
+     width: 300px;
+        border: 3px solid aquamarine;
+        padding: 50px;
+        margin: 20px;
+        margin-left: 416px;
+        border-radius: 15px;
+        position: relative;
+}
+body{
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+
+    
+
+   
+     
+    .Pera{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         font-size: 60px;
+         text-align: center;
+          color: aquamarine;
+          margin-bottom: 2px;
+          margin-top: 2px;
+       
+          
+    }
+     .form{
+   
+        text-align: center;
+        font-family:inherit;
+    font-size:inherit;
+    outline:none;
+    border:none;
+    padding:.5rem 1rem;
+    border-radius:15px;
+    border:2px solid #fff;
+        
+
+     }
+
+     .icon{
+        text-align: center;
+        font-size: 50px;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 10px;
+        
+       
+     }
+.city{
+    font-size: 60px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    
+}
+ .blanck{
+    margin-top: 10x;
+    width: 230px;
+     height: 34px;
+     text-align: center;
+     border:solid aquamarine;
+     border-radius: 10px;
+
+     
+ }
+ .button{
+     width: 130px;
+      height: 40px;
+      border-radius: 8px;
+     border:solid aquamarine;
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+ @media (max-width: 768px) {
+    /* Styles for mobile screens */
+    body {
+        font-size: 16px;
+        padding: 10px;
+     
+    }
+    .box{
+        margin-left: 2px;
+        text-align: center;
+        width: 330px;
+        border: 3px solid;
+        padding: 18px;
+        margin: 3px;
+    }
+
+    .blanck{
+        height: 26px;
+    }
+    .icon{
+        text-align: center;
+    font-size: 61px;
+    margin-right: 42px;
+    margin-left: 28px;
+    margin-top: 20px;
+    }
+}
+
+/* Media query for tablets and larger screens */
+@media (min-width: 769px) {
+    /* Styles for tablets and larger screens */
+    body {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    /* Any other tablet-specific or larger screen styles you want to apply */
+}
+    </style>
+</html>
